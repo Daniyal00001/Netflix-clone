@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/pics/1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1450px, 100vw);
+    height: 70vh;
+    position: relative;
+}
+
+.main2 {
+    background-color: black;
+    height: 70vh;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    height: 62px;
+}
+
+.nav img {
+    color: red;
+    width: 115px;
+    position: relative;
+    z-index: 10;
+}
+
+.nav button {
+    position: relative;
+    z-index: 10;
+    color: white;
+    background-color: red;
+    padding: 4px 15px;
+    border-radius: 6px;
+    border-color: rgba(0, 0, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+}
+.text {
+    font-family: "Kanit", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+    height: calc(100% - 62px);       /* Subtracting the height of the nav */
+    
+}
+.text> :first-child {
+    font-size: 41px;
+    font-weight: 900;
+    line-height: normal;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.text> :nth-child(2) {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: normal;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.text> :nth-child(3) {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: normal;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.separation {
+    height: 4px;
+    background-color: rgb(61, 61, 61);
+    width: 100%;
+}
+.text button {
+    background-color: red;
+    color: white;
+    padding: 8px 29px;
+    border-radius: 4px;
+    font-size: 15px;
+    border-color: rgba(0, 0, 0, 0);
+    font-weight: bolder;
+}
+.text input {
+    padding: 8px 29px;
+    border-radius: 4px;
+    font-size: 15px;
+    background: rgba(22, 22, 22, 0.7);
+    border-radius: 0.25rem;
+    border-width: 0.0625rem;
+    border-color: rgba(128, 128, 128, 0.7);
+    color: white;
+}
+.first {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    padding: 50px;
+}
+@media screen and (max-width: 1300px) {
+
+    .first {
+        flex-wrap: wrap;
+    }
+}
+.sec-img {
+    position: relative;
+    width: 60vw;/* Adjust the width as needed */
+} 
+.sec-img img {
+    width: 100%;  /* Make the image take the full width of the container */
+    display: block;  /* Ensure no extra space is added around the image */
+    position: relative;
+    z-index: 10;
+}
+.sec-img video {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 74%;
+    height: 60%;
+}
+.first>div :first-child {
+    font-family: "Kanit", sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+}
+.first>div :nth-child(2) {
+    font-family: "Kanit", sans-serif;
+    font-size: 24px;
+}
+.box1 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border: 2px solid white;
+    width: 60%;
+    min-width: 15rem;
+    bottom: 10%;/* Adjust bottom position to place the box over the image */
+    left: 20%; /* Adjust left position to place the box over the image */
+    background-color: black;/* Adding background color for better visibility */
+    z-index: 20; /* Ensuring the box is above the image */
+    border-radius: 8px;
+    text-align: left;
+}
+.box1 img {
+    width: 50%;
+    margin-right: 50px;/* Adjust margin as needed */
+    padding: 0 5px;
+}
+.second>div :nth-child(2) {
+    font-family: "Kanit", sans-serif;
+    font-size: 14px;
+}
+.second>div :nth-child(3) {
+    font-family: "Kanit", sans-serif;
+    font-size: 8px;
+    color: blue;
+}
+.faq {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-family: "Kanit", sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+}
+.boxq1:hover {
+    background-color: #414141;
+}
+.boxq1 {
+    transition: all 1s ease-out;
+    color: white;
+    background-color: rgb(29, 29, 29);
+    padding: 30px 30px;
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.bye {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: larger;
+}
+.bye2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+.bye2 input {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 17px 70px;
+    background: rgba(22, 22, 22, 0.7);
+    border-radius: 5px;
+    color: white;
+    border: 2px solid white;
+    text-align: left;
+}
+.bye2 button {
+    background-color: red;
+    color: white;
+    padding: 1px 47px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    font-weight: lighter;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+@media screen and (max-width: 1300px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: auto;
+    }
+    .text> :first-child {
+        font-size: 30px;
+    }
+    .text> :nth-child(2) {
+        font-size: 15px;
+    }
+    .text> :nth-child(3) {
+        font-size: 15px;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    .text input {
+        padding: 10px;
+    }
+    .bye2 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.footer a {
+
+    color: white;
+}
+.Questions {
+    padding: 34px 0;
+    text-decoration: underline;
+}
+.f_item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+.lastbtn button {
+    background: rgba(22, 22, 22, 0.7);
+    color: white;
+    padding: 5px 42px;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.end {
+    color: white;
+    padding: 15px;
+    margin-bottom: 55px;
+}
+/* Responsive adjustments */
+@media screen and (max-width: 1300px) {
+    .first {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav img {
+        width: 80px;
+    }
+
+    .nav button {
+        padding: 4px 10px;
+    }
+    .text> :first-child {
+        font-size: 20px;
+    }
+    .text> :nth-child(2),
+    .text> :nth-child(3) {
+        font-size: 14px;
+    }
+    .text input {
+        padding: 8px 20px;
+        width: 100%;
+    }
+    .text button {
+        padding: 8px 10px;
+        margin-top: 10px;
+        width: 70%;
+        margin-left: 35px;
+    }
+
+    .sec-img {
+        width: 100%;
+    }
+    .sec-img video {
+        top: 15%;
+        left: 5%;
+        width: 90%;
+        height: 50%;
+    }
+    .box1 {
+        width: 80%;
+        left: 10%;
+    }
+    .bye2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bye2 input {
+        width: 65%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .bye2 button {
+        width: 65%;
+        padding: 10px;
+        margin-top: 10px;
+
+    }
+}
+@media screen and (max-width: 1300px) {
+    .bye2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bye2 input {
+        padding: 8px 20px;
+        max-width: 50%;
+    }
+    .bye2 button {
+        padding: 8px 10px;
+        margin-top: 10px;
+
+        margin-left: 35px;
+        max-width: 50%;
+    }
+}
