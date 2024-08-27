@@ -133,11 +133,11 @@ body {
 }
 .sec-img {
     position: relative;
-    width: 60vw;/* Adjust the width as needed */
+    width: 60vw;                      /* Adjust the width as needed */
 } 
 .sec-img img {
-    width: 100%;  /* Make the image take the full width of the container */
-    display: block;  /* Ensure no extra space is added around the image */
+    width: 100%;                      /* Make the image take the full width of the container */
+    display: block;                   /* Ensure no extra space is added around the image */
     position: relative;
     z-index: 10;
 }
@@ -168,16 +168,16 @@ body {
     border: 2px solid white;
     width: 60%;
     min-width: 15rem;
-    bottom: 10%;/* Adjust bottom position to place the box over the image */
-    left: 20%; /* Adjust left position to place the box over the image */
-    background-color: black;/* Adding background color for better visibility */
-    z-index: 20; /* Ensuring the box is above the image */
+    bottom: 10%;                /* Adjust bottom position to place the box over the image */
+    left: 20%;                  /* Adjust left position to place the box over the image */
+    background-color: black;  /* Adding background color for better visibility */
+    z-index: 20;                /* Ensuring the box is above the image */
     border-radius: 8px;
     text-align: left;
 }
 .box1 img {
     width: 50%;
-    margin-right: 50px;/* Adjust margin as needed */
+    margin-right: 50px;         /* Adjust margin as needed */
     padding: 0 5px;
 }
 .second>div :nth-child(2) {
